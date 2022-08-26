@@ -31,3 +31,49 @@ ECHO.
 ECHO    Press " E.N.T.E.R " to Start The Application . . . . . . 
 PAUSE > NUL
 IF EXIST "NULL" DEL NULL
+
+::                          Process To Check Administrative Priviledges
+COLOR 0b
+CLS
+ECHO.
+ECHO.
+ECHO                Checking For The Administrative Priviledges . . . . . . . . . .
+ping localhost -n 2 >NULL
+CLS
+ECHO.
+ECHO.
+ECHO                Checking For The Administrative Priviledges . . .  
+ping localhost -n 2 >NULL
+CLS
+ECHO.
+ECHO.
+ECHO                Checking For The Administrative Priviledges . . . . . . . . . .
+ping localhost -n 2 >NULL
+CLS
+ECHO.
+ECHO.
+ECHO                Checking For The Administrative Priviledges . . .  
+ping localhost -n 2 >NULL
+CLS
+net session >nul 2>&1
+IF %ERRORLEVEL% EQU 0 (
+COLOR 0a
+ECHO.
+ECHO.
+ECHO.
+ECHO.
+ECHO                            *-----------------------------------------------*
+ECHO                                Granted The Administrative Priviledges 
+ECHO                            *-----------------------------------------------*
+ECHO.
+ping localhost -n 3 >null
+) ELSE (
+COLOR 7C
+ECHO.
+ECHO        [  Please Run This System Optimizer Program As an Administor  ]
+ECHO.
+ping localhost -n 1 >NULL
+IF EXIST "NULL" DEL NULL
+PAUSE >NUL
+GOTO :ProgramExit
+)
