@@ -77,3 +77,23 @@ IF EXIST "NULL" DEL NULL
 PAUSE >NUL
 GOTO :ProgramExit
 )
+
+CLS
+COLOR 0E
+ECHO.
+ECHO.
+ECHO            System-Optimizer will Start in " 3 " ......
+ping localhost -n 2 >nul
+CLS
+ECHO.
+ECHO.
+ECHO            System-Optimizer will Start in " 2 " ......
+ping localhost -n 2 >nul
+CLS
+ECHO.
+ECHO.
+ECHO            System-Optimizer will Start in " 1 " ......
+ping localhost -n 2 >nul
+CLS
+COLOR 0A 
+CLS
