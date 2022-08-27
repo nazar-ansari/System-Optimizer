@@ -97,3 +97,95 @@ ping localhost -n 2 >nul
 CLS
 COLOR 0A 
 CLS
+ECHO.
+ECHO.
+ECHO             **************************************************
+ECHO            * Cleaning All The " Temporary Files" From System  *
+ECHO             **************************************************
+ECHO.
+ECHO            [   10 %% ] - $
+ping localhost -n 2 >nul
+CLS
+ECHO.
+ECHO.
+ECHO             **************************************************
+ECHO            * Cleaning All The " Temporary Files" From System  *
+ECHO             **************************************************
+ECHO.
+ECHO            [   20 %% ] - -  $
+ping localhost -n 2 >nul
+CLS
+ECHO.
+ECHO.
+ECHO             **************************************************
+ECHO            * Cleaning All The " Temporary Files" From System  *
+ECHO             **************************************************
+ECHO.
+ECHO            [   30 %% ] - - - $
+ping localhost -n 2 >nul
+IF EXIST C:\Windows\Prefetch  ( RMDIR /S /Q  C:\Windows\Prefetch >nul 2>&1 ) 
+CLS
+ECHO.
+ECHO.
+ECHO             **************************************************
+ECHO            * Cleaning All The " Temporary Files" From System  *
+ECHO             **************************************************
+ECHO.
+ECHO            [   40 %% ] - - - - $
+ping localhost -n 2 >nul
+CLS
+ECHO.
+ECHO.
+ECHO             **************************************************
+ECHO            * Cleaning All The " Temporary Files" From System  *
+ECHO             **************************************************
+ECHO.
+ECHO            [   50 %% ] - - - - - $
+ping localhost -n 2 >nul
+CLS
+ECHO.
+ECHO.
+ECHO             **************************************************
+ECHO            * Cleaning All The " Temporary Files" From System  *
+ECHO             **************************************************
+ECHO.
+ECHO            [   60 %% ] - - - - - - $
+ping localhost -n 2 >nul
+IF EXIST C:\Windows\Temp  ( RMDIR /S /Q  C:\Windows\Temp >nul 2>&1 ) 
+CLS
+ECHO.
+ECHO.
+ECHO             **************************************************
+ECHO            * Cleaning All The " Temporary Files" From System  *
+ECHO             **************************************************
+ECHO.
+ECHO            [   70 %% ] - - - - - - - $
+ping localhost -n 2 >nul
+CLS
+ECHO.
+ECHO.
+ECHO             **************************************************
+ECHO            * Cleaning All The " Temporary Files" From System  *
+ECHO             **************************************************
+ECHO.
+ECHO            [   80 %% ] - - - - - - - - $
+ping localhost -n 2 >nul
+IF EXIST C:\Users\%USERNAME%\AppData\Local\Temp  (  DEL /S /Q /F C:\Users\%USERNAME%\AppData\Local\Temp >nul 2>&1 ) 
+CLS
+ECHO.
+ECHO.
+ECHO             **************************************************
+ECHO            * Cleaning All The " Temporary Files" From System  *
+ECHO             **************************************************
+ECHO.
+ECHO            [   90 %% ] - - - - - - - - - $
+ping localhost -n 2 >nul
+CLS
+ECHO.
+ECHO.
+ECHO             **************************************************
+ECHO            * Cleaning All The " Temporary Files" From System  *
+ECHO             **************************************************
+ECHO.
+ECHO            [  100 %% ] - - - - - - - - - - $
+ping localhost -n 2 >nul
