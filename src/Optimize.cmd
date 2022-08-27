@@ -189,3 +189,41 @@ ECHO             **************************************************
 ECHO.
 ECHO            [  100 %% ] - - - - - - - - - - $
 ping localhost -n 2 >nul
+CLS
+ECHO.
+ECHO.
+ECHO     =============================================================================
+ECHO     N.O.T.E : Toggle the Required Option on Upcoming Window After Pressing Enter
+ECHO     =============================================================================
+ECHO.
+ECHO.
+ECHO    Please Press " E.N.T.E.R " 
+PAUSE >nul
+CLEANMGR /SAGESET:1
+CLEANMGR /SAGERUN:1
+CLS
+ECHO.
+ECHO.
+ECHO     =============================================================================
+ECHO                 Defraging All The "DRIVES" On The Available Disk
+ECHO     =============================================================================
+ECHO.
+ECHO.
+ECHO     =======
+ECHO     N.O.T.E : Available Drives on Which Operations Will Gonna Perform
+ECHO     =======
+ECHO.
+ECHO        ********************************************
+ECHO        *           Drive   ^|    VolumeName        *
+ECHO        ********************************************
+FOR /F "usebackq TOKENS=1,2 DELIMS=:" %%A IN (` wmic logicaldisk get name ^, volumename ^| findstr /i : `) DO (
+    ECHO                     %%A:   %%B   
+    ECHO        --------------------------------------------
+)
+ECHO.
+ECHO.
+ECHO Press "E.N.T.E.R" to Defrag all ..............
+PAUSE >NUL
+ECHO.
+ECHO.
+DEFRAG /C /O /U /V /L
