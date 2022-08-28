@@ -227,3 +227,33 @@ PAUSE >NUL
 ECHO.
 ECHO.
 DEFRAG /C /O /U /V /L
+CLS
+ECHO.
+ECHO.
+ECHO     =============================================================================
+ECHO            Checking Desktop Right Click Shortcut for "Restart" ^& "Shutdown"
+ECHO     =============================================================================
+ECHO.
+ECHO.
+ECHO        Checking . . . . . . 
+ping localhost -n 2 >nul
+CLS
+ECHO.
+ECHO.
+ECHO     =============================================================================
+ECHO            Checking Desktop Right Click Shortcut for "Restart" ^& "Shutdown"
+ECHO     =============================================================================
+ECHO.
+ECHO.
+ECHO        Checking . . 
+ping localhost -n 2 >nul
+CLS
+ECHO.
+ECHO.
+ECHO     =============================================================================
+ECHO            Checking Desktop Right Click Shortcut for "Restart" ^& "Shutdown"
+ECHO     =============================================================================
+ECHO.
+ECHO.
+ECHO        Checking . . . . . . 
+ping localhost -n 2 >nul
