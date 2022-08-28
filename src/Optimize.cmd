@@ -257,3 +257,31 @@ ECHO.
 ECHO.
 ECHO        Checking . . . . . . 
 ping localhost -n 2 >nul
+ECHO.
+ECHO.
+REG QUERY HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart-System >nul 2>&1
+IF %ERRORLEVEL% NEQ 0 (
+    ECHO [ IT Seems that " Shortcuts "  are not added So , adding them for your Accessiblity ]
+    REG ADD HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart-System /v "icon" /t REG_SZ /d "shell32.dll,-16739" /f  >nul 2>&1
+    REG ADD HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart-System /v "position" /t REG_SZ /d "bottom" /f >nul 2>&1
+
+    REG ADD HKEY_CLASSES_ROOT\DesktopBackground\Shell\Shutdown-System /v "icon" /t REG_SZ /d "shell32.dll,-284" /f  >nul 2>&1
+    REG ADD HKEY_CLASSES_ROOT\DesktopBackground\Shell\Shutdown-System /v "position" /t REG_SZ /d "bottom" /f >nul 2>&1
+
+    ECHO.
+    ECHO.
+    ECHO     Press Enter to "E.X.I.T"
+    PAUSE >nul
+) ELSE (
+    ECHO        -----------------------------
+    ECHO         " Shortcuts " Already Exist 
+    ECHO        -----------------------------
+    ECHO.
+    ECHO     Press Enter to "E.X.I.T"
+    PAUSE >NUL
+)
+
+
+::                                  Function To Redirect to Exit
+:ProgramExit
+IF EXIST "NULL" DEL NULL
