@@ -264,9 +264,11 @@ IF %ERRORLEVEL% NEQ 0 (
     ECHO [ IT Seems that " Shortcuts "  are not added So , adding them for your Accessiblity ]
     REG ADD HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart-System /v "icon" /t REG_SZ /d "shell32.dll,-16739" /f  >nul 2>&1
     REG ADD HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart-System /v "position" /t REG_SZ /d "bottom" /f >nul 2>&1
+    REG ADD HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart-System\command  /t REG_SZ /d "shutdown.exe -r -t 00 -f" /f >nul 2>&1
 
     REG ADD HKEY_CLASSES_ROOT\DesktopBackground\Shell\Shutdown-System /v "icon" /t REG_SZ /d "shell32.dll,-284" /f  >nul 2>&1
     REG ADD HKEY_CLASSES_ROOT\DesktopBackground\Shell\Shutdown-System /v "position" /t REG_SZ /d "bottom" /f >nul 2>&1
+    REG ADD HKEY_CLASSES_ROOT\DesktopBackground\Shell\Shutdown-System\command  /t REG_SZ /d "shutdown.exe -s -t 00 -f" /f >nul 2>&1
 
     ECHO.
     ECHO.
