@@ -38,22 +38,22 @@ CLS
 ECHO.
 ECHO.
 ECHO                Checking For The Administrative Priviledges . . . . . . . . . .
-ping localhost -n 2 >NULL
+TIMEOUT /T 1 /NOBREAK >NUL
 CLS
 ECHO.
 ECHO.
 ECHO                Checking For The Administrative Priviledges . . .  
-ping localhost -n 2 >NULL
+TIMEOUT /T 1 /NOBREAK >NUL
 CLS
 ECHO.
 ECHO.
 ECHO                Checking For The Administrative Priviledges . . . . . . . . . .
-ping localhost -n 2 >NULL
+TIMEOUT /T 1 /NOBREAK >NUL
 CLS
 ECHO.
 ECHO.
 ECHO                Checking For The Administrative Priviledges . . .  
-ping localhost -n 2 >NULL
+TIMEOUT /T 1 /NOBREAK >NUL
 CLS
 net session >nul 2>&1
 IF %ERRORLEVEL% EQU 0 (
@@ -66,13 +66,13 @@ ECHO                            *-----------------------------------------------
 ECHO                                Granted The Administrative Priviledges 
 ECHO                            *-----------------------------------------------*
 ECHO.
-ping localhost -n 3 >null
+TIMEOUT /T 2 /NOBREAK >NUL
 ) ELSE (
 COLOR 7C
 ECHO.
 ECHO        [  Please Run This System Optimizer Program As an Administor  ]
 ECHO.
-ping localhost -n 1 >NULL
+TIMEOUT /T 1 /NOBREAK >NUL
 IF EXIST "NULL" DEL NULL
 PAUSE >NUL
 GOTO :ProgramExit
@@ -83,17 +83,17 @@ COLOR 0E
 ECHO.
 ECHO.
 ECHO            System-Optimizer will Start in " 3 " ......
-ping localhost -n 2 >nul
+TIMEOUT /T 1 /NOBREAK >NULL
 CLS
 ECHO.
 ECHO.
 ECHO            System-Optimizer will Start in " 2 " ......
-ping localhost -n 2 >nul
+TIMEOUT /T 1 /NOBREAK >NULL
 CLS
 ECHO.
 ECHO.
 ECHO            System-Optimizer will Start in " 1 " ......
-ping localhost -n 2 >nul
+TIMEOUT /T 1 /NOBREAK >NULL
 CLS
 COLOR 0A 
 CLS
@@ -104,7 +104,7 @@ ECHO            * Cleaning All The " Temporary Files" From System  *
 ECHO             **************************************************
 ECHO.
 ECHO            [   10 %% ] - $
-ping localhost -n 2 >nul
+TIMEOUT /T 1 /NOBREAK >NULL
 CLS
 ECHO.
 ECHO.
@@ -113,7 +113,7 @@ ECHO            * Cleaning All The " Temporary Files" From System  *
 ECHO             **************************************************
 ECHO.
 ECHO            [   20 %% ] - -  $
-ping localhost -n 2 >nul
+TIMEOUT /T 1 /NOBREAK >NULL
 CLS
 ECHO.
 ECHO.
@@ -122,7 +122,7 @@ ECHO            * Cleaning All The " Temporary Files" From System  *
 ECHO             **************************************************
 ECHO.
 ECHO            [   30 %% ] - - - $
-ping localhost -n 2 >nul
+TIMEOUT /T 1 /NOBREAK >NULL
 IF EXIST C:\Windows\Prefetch  ( RMDIR /S /Q  C:\Windows\Prefetch >nul 2>&1 ) 
 CLS
 ECHO.
@@ -132,7 +132,7 @@ ECHO            * Cleaning All The " Temporary Files" From System  *
 ECHO             **************************************************
 ECHO.
 ECHO            [   40 %% ] - - - - $
-ping localhost -n 2 >nul
+TIMEOUT /T 2 /NOBREAK >NULL
 CLS
 ECHO.
 ECHO.
@@ -141,7 +141,7 @@ ECHO            * Cleaning All The " Temporary Files" From System  *
 ECHO             **************************************************
 ECHO.
 ECHO            [   50 %% ] - - - - - $
-ping localhost -n 2 >nul
+TIMEOUT /T 0 /NOBREAK >NULL
 CLS
 ECHO.
 ECHO.
@@ -150,7 +150,7 @@ ECHO            * Cleaning All The " Temporary Files" From System  *
 ECHO             **************************************************
 ECHO.
 ECHO            [   60 %% ] - - - - - - $
-ping localhost -n 2 >nul
+TIMEOUT /T 2 /NOBREAK >NULL
 IF EXIST C:\Windows\Temp  ( RMDIR /S /Q  C:\Windows\Temp >nul 2>&1 ) 
 CLS
 ECHO.
@@ -160,7 +160,7 @@ ECHO            * Cleaning All The " Temporary Files" From System  *
 ECHO             **************************************************
 ECHO.
 ECHO            [   70 %% ] - - - - - - - $
-ping localhost -n 2 >nul
+TIMEOUT /T 1 /NOBREAK >NULL
 CLS
 ECHO.
 ECHO.
@@ -169,7 +169,7 @@ ECHO            * Cleaning All The " Temporary Files" From System  *
 ECHO             **************************************************
 ECHO.
 ECHO            [   80 %% ] - - - - - - - - $
-ping localhost -n 2 >nul
+TIMEOUT /T 1 /NOBREAK >NULL
 IF EXIST C:\Users\%USERNAME%\AppData\Local\Temp  (  DEL /S /Q /F C:\Users\%USERNAME%\AppData\Local\Temp >nul 2>&1 ) 
 CLS
 ECHO.
@@ -179,7 +179,7 @@ ECHO            * Cleaning All The " Temporary Files" From System  *
 ECHO             **************************************************
 ECHO.
 ECHO            [   90 %% ] - - - - - - - - - $
-ping localhost -n 2 >nul
+TIMEOUT /T 1 /NOBREAK >NULL
 CLS
 ECHO.
 ECHO.
@@ -188,7 +188,7 @@ ECHO            * Cleaning All The " Temporary Files" From System  *
 ECHO             **************************************************
 ECHO.
 ECHO            [  100 %% ] - - - - - - - - - - $
-ping localhost -n 2 >nul
+TIMEOUT /T 1 /NOBREAK >NULL
 CLS
 ECHO.
 ECHO.
@@ -236,7 +236,7 @@ ECHO     =======================================================================
 ECHO.
 ECHO.
 ECHO        Checking . . . . . . 
-ping localhost -n 2 >nul
+TIMEOUT /T 1 /NOBREAK >NULL
 CLS
 ECHO.
 ECHO.
@@ -246,7 +246,7 @@ ECHO     =======================================================================
 ECHO.
 ECHO.
 ECHO        Checking . . 
-ping localhost -n 2 >nul
+TIMEOUT /T 1 /NOBREAK >NULL
 CLS
 ECHO.
 ECHO.
@@ -256,7 +256,7 @@ ECHO     =======================================================================
 ECHO.
 ECHO.
 ECHO        Checking . . . . . . 
-ping localhost -n 2 >nul
+TIMEOUT /T 1 /NOBREAK >NULL
 ECHO.
 ECHO.
 REG QUERY HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart-System >nul 2>&1
