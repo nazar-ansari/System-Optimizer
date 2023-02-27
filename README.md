@@ -24,9 +24,10 @@
 
 <img height="400" width="750" alt="4" src="https://user-images.githubusercontent.com/77230322/216822725-e9d40128-9fcd-40cf-91ee-4a1225c9a77e.png">
 
-<img height="400" width="750" alt="5" src="https://user-images.githubusercontent.com/77230322/216822755-163f3582-50e2-4607-a66f-259bd8a25415.png">
+<img height="400" width="750" alt="5" src="https://user-images.githubusercontent.com/77230322/221586358-89cbef1d-e778-40ba-ad30-bc5c581720f9.png">
 
-- _**The Shortcut for ShutDown and Restart are added , if already presents then neglects the Phase .**_
+
+- _**The Various Helpful shortcuts are added as listed above , if Shortcuts already presents then neglects the Phase .**_
 <hr>
 
 # ⚙️ _**Steps For Installation :**_
