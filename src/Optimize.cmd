@@ -132,7 +132,7 @@ ECHO             	*************************************************************
 ECHO.
 ECHO            		[   30 %% ] - - - $
 TIMEOUT /T 2 /NOBREAK >NUL
-:: IF EXIST C:\Windows\Prefetch  ( RMDIR /S /Q  C:\Windows\Prefetch >nul 2>&1 ) 
+IF EXIST C:\Windows\Prefetch  ( RMDIR /S /Q  C:\Windows\Prefetch >nul 2>&1 ) 
 CLS
 ECHO.
 ECHO.
@@ -163,7 +163,7 @@ ECHO             	*************************************************************
 ECHO.
 ECHO            		[   60 %% ] - - - - - - $
 TIMEOUT /T 1 /NOBREAK >NUL
-:: IF EXIST C:\Windows\Temp  ( RMDIR /S /Q  C:\Windows\Temp >nul 2>&1 ) 
+IF EXIST C:\Windows\Temp  ( RMDIR /S /Q  C:\Windows\Temp >nul 2>&1 ) 
 CLS
 ECHO.
 ECHO.
@@ -184,7 +184,7 @@ ECHO             	*************************************************************
 ECHO.
 ECHO            		[   80 %% ] - - - - - - - - $
 TIMEOUT /T 2 /NOBREAK >NUL
-:: IF EXIST C:\Users\%USERNAME%\AppData\Local\Temp  (  DEL /S /Q /F C:\Users\%USERNAME%\AppData\Local\Temp >nul 2>&1 ) 
+IF EXIST C:\Users\%USERNAME%\AppData\Local\Temp  (  DEL /S /Q /F C:\Users\%USERNAME%\AppData\Local\Temp >nul 2>&1 ) 
 CLS
 ECHO.
 ECHO.
